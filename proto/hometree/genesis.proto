@@ -1,0 +1,14 @@
+syntax = "proto3";
+package hometree.hometree;
+
+import "gogoproto/gogo.proto";
+import "hometree/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "HomeTree/x/hometree/types";
+
+// GenesisState defines the hometree module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

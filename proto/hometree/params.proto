@@ -1,0 +1,12 @@
+syntax = "proto3";
+package hometree.hometree;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "HomeTree/x/hometree/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
